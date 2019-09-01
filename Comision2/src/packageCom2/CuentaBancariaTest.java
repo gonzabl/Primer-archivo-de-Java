@@ -15,17 +15,19 @@ class CuentaBancariaTest {
 		cuenta = new CuentaBancaria(100); // inicializacion de juego de datos
 	}
 
-	/*@Test
+	@Test // esta palabra reservada es importante que este en cada test, sino no se lo reconoce como tal
 	void depositarTest() {
 		cuenta.depositar3(20); // Ejecucion de prueba de datos
 		assertEquals(120,cuenta.getSaldo()); // verificacion de datos
-	}*/
+	}
 	
-	@Test // con un bug
-	void depositarTest() {
+	/*
+	@Test 
+	void depositarTest() { // con un bug para mostrar cuando falla
 		cuenta.depositar3(21); // Ejecucion de prueba de datos
 		assertEquals(120,cuenta.getSaldo()); // verificacion de datos
 	}
+	*/
 	
 	@Test
 	void extraerTest() {
